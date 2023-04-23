@@ -1,0 +1,151 @@
+*{
+	border: 10;
+	margin:10px;
+	padding:20;
+}
+h2{
+    border:2px solid #fff;
+	color:rgb(100,100,100);
+	font-family: serif;
+	font-size: 1.5rem;
+	padding: 10px;
+    font-weight: hold;
+	text-decoration: none;
+}
+
+ul li{
+        color: #00d089;
+        text-decoration: underline;
+}
+
+table {
+        border: 1;
+        font-size: 70%;
+        font-style: inherit;
+        font-weight: inherit;
+        margin: 10;
+        outline: 10; 
+        padding: 10;
+        vertical-align:middle;
+        background-size:cover;
+        background-position: left;
+        display:inline-flexbox;
+        margin: 50px;
+} 
+tr{
+    background-color: aquamarine;
+    background-position: center;
+}
+th{
+    background-color:bisque;
+    background-position:center;
+}
+
+
+body{
+	color:grey;
+	font-family: serif;
+	font-size:100%;
+	line-height:1.3;
+    background-color:none;
+}
+
+section{
+    font-family: serif;
+}    
+h1{
+    background-color: aquamarine;
+    font-family: serif;
+    border-bottom:grey;
+    /*display:*/
+}
+footer{
+    font-style: italic;
+    text-decoration: underline;
+}
+.fondo{
+    width: 500px;
+    height: auto;
+}
+.alineado{
+    width: 500px;
+    height: auto;
+}
+.aladerecha{
+    text-align: right;
+}
+.img{
+    height: 200px;
+    width: 300px;
+    background-color:antiquewhite;
+    background-image:url(Multimedia/traenos\ lo\ qeu\ no\ usas\ clothes-gc37488806_1280.jpg);
+    background-repeat: no-repeat;
+    background-position: right center;
+    border: 10;
+    margin-left: 50px;
+}
+iframe{
+    border: 10 solid g;
+    margin-left: 50px;
+    border:5px solid #00d089;
+}
+section img{
+    height: 200px;
+    width: 300px;
+    background-color:antiquewhite;
+    background-image:url(Multimedia/traenos\ lo\ qeu\ no\ usas\ clothes-gc37488806_1280.jpg);
+    background-repeat: no-repeat;
+    background-position:right;
+    border: 10;
+    margin-left: 50px;
+    border:5px solid burlywood;
+}
+.centrado{
+    text-align: center;
+}
+nav {
+    text-decoration: dashed;
+    color:grey;
+	font-family: serif;
+	font-size:100%;
+	line-height:1.3;
+}
+.marquee{
+    background-color:grey;
+    font-family: serif;
+	font-size:100%;
+	line-height:1.3;
+    color:ghostwhite;
+}
+p{
+    font-size: 1rem;
+    text-decoration:solid;
+    font-family: calibri;
+}
+.parrafo2{
+    background-color: azure;
+    width: 500px;
+    height: auto;
+    background-position:left;
+    display: inline-block;
+    text-align: justify;
+}
+.boxModeling{
+    height: 20px;
+    width: 250px;
+    background-color: black;
+    padding-bottom:20px;
+    border:3px solid #00d089;
+    text-align: center;
+    overflow: visible;
+    margin-left: 100px;
+}
+.boxModeling2{
+    height: autopx;
+    width: autopx;
+    background-color:#033a28;
+    padding:20;    
+    border:3px solid grey;
+    text-align:center;
+    align-items: center;
+}    
