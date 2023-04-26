@@ -1,0 +1,190 @@
+h2 {
+	border: 2px solid #fff;
+	color: rgb(100, 100, 100);
+	font-family: calibri;
+	font-size: 1.2rem;
+	padding: 12px;
+	text-decoration: none
+}
+
+p {
+	display: inline;
+	font-family: calibri;
+	text-align: left;
+	text-size-adjust: inherit;
+	font-style: italic;
+	line-height: 0.5rem;
+}
+
+.bordecolor {
+	background-color: beige;
+	background-size: auto;
+	text-decoration: underline;
+	font-weight: strong;
+	display: inline-block;
+}
+
+h1 {
+	background-color: aquamarine;
+	font-family: serif;
+	color: grey;
+}
+
+.boxModeling2 {
+	height: autopx;
+	width: autopx;
+	background-color: #033a28;
+	padding: 20;
+	border: 3px solid grey;
+	text-align: center;
+	color: grey;
+	font-size: larger;
+}
+
+.active {
+	background-position: center;
+	/* background-color: black; */
+	height: auto;
+	border-radius: 0;
+	margin-bottom: 10px;
+	margin-left: 20%;
+	margin-right: 20%;
+}
+
+.carousel-control-prev {
+	background-color: grey;
+	display: grid;
+}
+
+.carousel-control-next {
+	background-color: grey;
+	display: grid;
+	margin-right: 20%;
+}
+
+div h2 {
+	border: 2px solid #fff;
+	color: aquamarine;
+	font-family: calibri;
+	font-size: 1.2rem;
+	padding: 12px;
+	text-decoration: none
+}
+
+footer {
+	background-color: grey;
+	color: #fff;
+	width: 100%;
+	height: auto;
+	padding: 20px;
+	text-align: center;
+	font-size: small;
+	font-style: italic;
+	text-decoration: underline;
+	margin-top: 40%;
+}
+
+.redes {
+	background-color: #000;
+}
+
+footer a {
+	color: #00d089;
+	letter-spacing: 15px;
+	align-items: flex-start;
+}
+
+.jumbotron {
+	background-image: url(../multimedia/ESTA.jpeg);
+	background-size: cover;
+	background-position: center;
+	height: 600px;
+	color: yellow;
+	text-shadow: 0 0 5px #000;
+	border-radius: 0;
+	margin-bottom: 0;
+	width: 100%;
+
+}
+
+.jumbotron p {
+	color: #fff;
+}
+
+h1 {
+	text-align: center;
+	background-color: #00d089;
+	color: #fff;
+	padding: 10px;
+	margin-bottom: 0;
+	font-family: 'Lucida Sans';
+	font-size: medium;
+}
+
+section {
+	font-size: x-large;
+	margin-left: 10%;
+	border-color: #033a28;
+}
+
+.form-group {
+	margin-right: 60%;
+}
+
+.card {
+	font-size: large;
+	font-family: 'Lucida Sans';
+	margin-left: 0%;
+	border-color: black;
+	background-color: hsl(182, 66%, 44%);
+}
+
+
+/* -----Sobre Nosotros GRID------------------------ */
+.nosotros2 {
+	width: 100%;
+	height:auto;
+}
+
+.nleft {
+	height: 200px;
+	width: 100%;
+	background-image: url(../multimedia/chicaconhilos.jpeg);
+	background-position: center;
+	background-size: cover;
+}
+
+.nright {
+	height: auto;
+	width: 100%;
+	padding: 10px;
+}
+
+.nright h3 {
+	font-size: 15px;
+	font-family:'Lucida Sans';
+	/* margin-bottom: 20px; */
+	color: #fff;
+	text-shadow: 0 0 5px #000,
+}
+
+.nright p {
+	text-align: justify;
+	/* margin-bottom: 0px; */
+	font-family:'Lucida Sans';
+	font-weight: bold;
+}
+
+.boton1 {
+	background-color: #000;
+	padding: 10px 20px;
+	color: #fff;
+	text-decoration: none;
+	font-family: 'Oswald', sans-serif
+}
+
+.boton1:hover {
+	background-color: springgreen;
+	text-shadow: 0 0 5px #000;
+	transition: all 1.5s;
+}
