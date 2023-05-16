@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -45,7 +45,7 @@
     font-family: 'Lucida Sans';
 }
 
-header{
+header {
     background-color: grey;
     height: 80px;
     width: 100%;
@@ -56,7 +56,7 @@ header{
     font-family: 'Lucida Grande';
     color: #fff;
     text-shadow: 0 0 5px #000,
-    0 0 5px #000;
+        0 0 5px #000;
 }
 
 
@@ -86,8 +86,10 @@ h2 {
 }
 
 .servicios .row {
-    height: 100%;
+    height: 395px;
+    padding: 5px;
 }
+
 
 .nleft {
     background-image: url(multimedia/mujer-sentada-estudio-coser-tela_1157-33781.jpg);
@@ -104,7 +106,6 @@ h2 {
     padding: 10px;
     border-width: 20px;
     color: grey;
-    ;
     font-family: 'Lucida Sans';
     font-size: large;
     height: auto;
@@ -158,13 +159,6 @@ h2 {
     background-position: center;
     background-size: cover; */
 
-.servicios {
-    height: 400px;
-}
-
-.servicios .row {
-    height: 400px;
-}
 
 .item {
     height: 200px;
@@ -322,8 +316,8 @@ nav {
     font-size: 100%;
     line-height: 1.2;
     color: ghostwhite;
-    box-sizing:auto;
-    
+    box-sizing: auto;
+
 }
 
 p {
@@ -340,22 +334,98 @@ p {
     display: inline-block;
     text-align: justify;
 }
-footer{
-    background-color:grey;
+
+footer {
+    background-color: grey;
     color: #fff;
     width: 100%;
     height: auto;
     padding: 20px;
     text-align: center;
-    font-size:small;
+    font-size: small;
     font-style: italic;
     text-decoration: underline;
 }
-.redes{
+
+.redes {
     background-color: #000;
 }
-footer a{
+
+footer a {
     color: #00d089;
     letter-spacing: 15px;
     align-items: flex-start;
+}
+
+@media only screen and (min-width: 100px) and (max-width:500px) {
+    .jumbotron {
+        background-image: linear-gradient(rgba(0, 255, 204, 0.5), rgba(33, 33, 24, 0.5)), url("./multimedia/telabanner.jpg");
+        background-position: center;
+        height: 300px;
+        width: 100%;
+        border-radius: 0;
+        margin-bottom: 0;
+        font-size: small;
+    }
+
+    .jumbotron p {
+        font-size: x-small;
+    }
+
+    h2{
+        font-size: small;
+    }
+    article {
+        font-size: small;
+    }
+    h3 {
+        font-size: x-small;
+    }
+    aside {
+        font-size: x-small;
+    }
+
+    p {
+        font-size: x-small;
+    }
+    .servicios {
+        height: 100px;
+        padding:none;  
+    }
+    .servicios .row {
+        height: 50px;
+        padding: 1px;
+    }
+    .nleft{
+        height: 100px;
+        padding: 1px;
+        
+    }
+    .nleft2{
+        height: 100px;
+        padding: 1px;
+        display: inline-block;
+    }
+    .nleft3{
+        height: 100px;
+        padding: 1px;
+        display: inline-block;
+    }
+    .nleft4{
+        height: 100px;
+        padding: 1px;
+        display: inline-block;
+}
+    .nright {
+        height: 20px;
+        padding: 1px;
+    }
+        
+    .nright h3{
+        font-size:small;
+    }
+    .nright p{
+        font-size:small;
+    }
+
 }
