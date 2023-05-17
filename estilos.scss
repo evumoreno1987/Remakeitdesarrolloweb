@@ -1,0 +1,410 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// Paleta gama de colores
+$color1: #3EAB84;
+$color2: #1CB895;
+$color3: #419E96;
+$color4: #46B3B8;
+$color5: #008FAD;
+$color6: grey;
+$color7: black;
+$color8: green;
+$color9: aquamarine;
+$color10:#fff;
+
+
+// Tamaño  
+$font1: 'Lucida Sans';
+$fontxs: x-small;
+$fontxl: xl-large;
+$fonts: small;
+$fontm: medium;
+$fontl: large;
+
+
+// Nav Bar 
+.navbar-nav {
+    font-family: $font1;
+    font-size: $fontm;
+}
+
+    .link {
+        color: ($color2) !important;
+        padding-left: 20px !important;
+}
+
+        .link:hover {
+        color: rgb(47, 255, 220) !important;
+        font-weight: bold;
+        background-color: grey;
+}
+
+// Banner  
+.jumbotron {
+    background-image: linear-gradient(rgba(0, 255, 204, 0.5), rgba(33, 33, 24, 0.5));
+    height: 250px;
+    color: $color7;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-family: $font1;
+    font-size: $fontxl;
+}
+
+
+
+h2 {
+    text-align: center;
+    background-color: rgb(86, 174, 134);
+    background-origin: content-box;
+    color: #fff;
+    padding: 3PX;
+    margin-bottom: 0;
+    font-family: 'Lucida Sans';
+    font-size: $fontl;
+    border-radius: unset;
+    border: 2px solid $color6;
+}
+
+
+//Servicio inicia 
+
+
+@mixin size ($width, $height, $bgcolor,$color,$padding) {
+    height: $height;
+    width: $width;
+    background-color: $bgcolor;
+    color: $color;
+    padding: $padding;
+}
+
+.servicios {
+    @include size (100%,400px,$color6,$color10,2px)
+}
+
+        .row {
+            @include size (100%,400px,$color6,$color7,2px)
+        }            
+
+        //Que hacemos?
+            .nleft {
+                background-image: url(multimedia/mujer-sentada-estudio-coser-tela_1157-33781.jpg);
+                background-size: cover;
+                background-position: center;
+                size-adjust: unset;
+                padding: auto;
+                border: 2px solid #fff;
+            }
+
+            h3 {
+                background-color: $color7;
+                text-align: center;
+                background-position: center;
+                padding: 10px;
+                color: $color6;
+                font-family: $font1;
+                font-size: $fontl;
+                border: 2px solid $color10;
+                // height: auto;
+            }
+
+            .nright p{
+                background-color: #008FAD;
+                text-align: justify;
+                background-position: center;
+                padding: 50px;
+                color: $color10;
+                font-family: 'Lucida Sans';
+                font-size: $fontl;
+                height:280px;
+                border: 2px solid #fff;
+            }
+
+        //Nuestroa arreglos
+
+            .nleft2 {
+                background-image: url(multimedia/AdobeStock_14721611_Preview.jpeg);
+                background-size: cover;
+                background-position: center;
+                size-adjust: inherit;
+                height: 400px;
+                padding: auto;
+                border: 2px solid #fff;
+
+            }
+        //Venta despericio textil
+            .nleft3 {
+                background-image: url(multimedia/arreglo-plano-tela-jeans_23-2148876417.jpg);
+                background-size: cover;
+                background-position: center;
+                size-adjust: inherit;
+                height: 400px;
+                padding: auto;
+                border: 2px solid #fff;
+            }
+//Boton mas info 
+            .btn-warning {
+                background-color: #00d089;
+                border-radius: 0%;
+            }
+
+                .btn-warning:hover {
+                    transform: scale(10);
+                    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+                }
+
+
+//Galeria tienda iniio
+
+.item {
+    height: 400px;
+    width: 100%;
+    border: 2px solid #fff;
+    background-color: #444;
+    background-size: cover;
+    background-position: center;
+    filter: sepia(0%);
+    transition: all 0.9s;
+}
+
+    .item:hover {
+        filter: sepia(100%);
+        transform: scale(0.9);
+        transition: 0.9s;
+}
+
+.item1 {
+    background-image: url(multimedia/Tienda1.jpeg);
+}
+
+.item2 {
+    background-image: url(multimedia/Tienda2.jpeg);
+}
+
+.item3 {
+    background-image: url(multimedia/Tienda\ 3.jpeg);
+}
+
+/* .item {
+        height: 250px;
+        background-color: #333;
+        border: 5px solid yellow;
+        background-image: url(img/cherries-g17c80d496_1920.jpg);
+        background-position: center;
+        background-size: cover;
+    } */
+
+
+/* h2 {
+        border: 2px solid #fff;
+        color: rgb(100, 100, 100);
+        font-family: serif;
+        font-size: 1.5rem;
+        padding: 10px;
+        font-weight: hold;
+        text-decoration: none;
+    } */
+
+ul li {
+    color: #00d089;
+    text-decoration: underline;
+}
+
+
+tr {
+    background-color: aquamarine;
+    background-position: center;
+}
+
+th {
+    background-color: bisque;
+    background-position: center;
+}
+
+
+body {
+    color: grey;
+    font-family: serif;
+    font-size: 100%;
+    line-height: 1.3;
+    background-color: none;
+}
+
+
+
+
+.fondo {
+    width: 500px;
+    height: auto;
+}
+
+.alineado {
+    width: 500px;
+    height: auto;
+}
+
+.aladerecha {
+    text-align: right;
+}
+
+.img {
+    height: 200px;
+    width: 300px;
+    background-color: antiquewhite;
+    background-image: url(Multimedia/traenos\ lo\ qeu\ no\ usas\ clothes-gc37488806_1280.jpg);
+    background-repeat: no-repeat;
+    background-position: right center;
+    border: 10;
+    margin-left: 50px;
+}
+
+iframe {
+    border: 10 solid g;
+    margin-left: 50px;
+    border: 5px solid #00d089;
+}
+
+section img {
+    height: 200px;
+    width: 300px;
+    background-color: antiquewhite;
+    background-image: url(Multimedia/traenos\ lo\ qeu\ no\ usas\ clothes-gc37488806_1280.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    border: 10;
+    margin-left: 50px;
+    border: 5px solid burlywood;
+}
+
+.centrado {
+    text-align: center;
+}
+
+nav {
+    text-decoration: dashed;
+    color: grey;
+    font-family: serif;
+    font-size: 100%;
+    line-height: 1.3;
+}
+
+.marquee {
+    background-color: grey;
+    font-family: serif;
+    font-size: 100%;
+    line-height: 1.2;
+    color: ghostwhite;
+    box-sizing: auto;
+
+}
+
+p {
+    font-size: 1rem;
+    text-decoration: solid;
+    font-family: calibri;
+}
+
+.parrafo2 {
+    background-color: azure;
+    width: 500px;
+    height: auto;
+    background-position: left;
+    display: inline-block;
+    text-align: justify;
+}
+
+footer {
+    background-color: grey;
+    color: #fff;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    text-align: center;
+    font-size: small;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.redes {
+    background-color: #000;
+}
+
+footer a {
+    color: #00d089;
+    letter-spacing: 15px;
+    align-items: flex-start;
+}
+
+@media only screen and (min-width: 100px) and (max-width:500px) {
+    .jumbotron {
+        background-image: linear-gradient(rgba(0, 255, 204, 0.5), rgba(33, 33, 24, 0.5)), url("./multimedia/telabanner.jpg");
+        background-position: center;
+        height: 200px;
+        width: 100%;
+        border-radius: 0;
+        margin-bottom: 0;
+        font-size: small;
+    }
+
+    .jumbotron p {
+        font-size: x-small;
+    }
+
+    .servicios {
+        @include size (100%,20px,$color6,$color10,2px)
+    }
+    .servicios {
+        display:inline-block;
+    }
+        .row {
+            @include size (100%,300px,$color6,$color7,2px)
+    }            
+
+    //Que hacemos?
+                h3 {
+                    @include size (500%,50px,$color6,$color7,2px)
+            }
+                h3{
+                font-size: $fontxs; 
+                }
+
+            .nright {
+                @include size (500%,50px,$color6,$color7,2px)
+                // background-color: #008FAD;pagg
+                // text-align: justify;
+                // background-position: center;
+                // padding: 50px;
+                // color: $color10;
+                // font-family: 'Lucida Sans';
+                // font-size: $fontl;
+                // height:280px;
+                // border: 2px solid #fff;
+            }
+            nright p {
+                @include size (100%,50px,$color6,$color7,2px)
+            }
+            .nleft {
+                @include size (50%,50px,$color6,$color7,2px)
+            }
+            .nleft2 {
+                @include size (25%,50px,$color6,$color7,2px)
+            }
+            .nleft3 {
+                @include size (25%,50px,$color6,$color7,2px)
+            }
+
+.item {
+    height: 30px;
+    width: 30%;
+    // border: 2px solid #fff;
+    // background-color: #444;
+    // background-size: cover;
+    // background-position: center;
+    // filter: sepia(0%);
+    // transition: all 0.9s;
+}
+
+}
