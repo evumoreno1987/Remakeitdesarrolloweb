@@ -25,6 +25,12 @@ $fonts: small;
 $fontm: medium;
 $fontl: large;
 
+//dimensiones
+
+$size1: 100%;
+$size2: 50%;
+$size3: 20px;
+$size4: 50px;
 
 // Nav Bar 
 .navbar-nav {
@@ -54,24 +60,20 @@ $fontl: large;
     font-size: $fontxl;
 }
 
-
-
 h2 {
     text-align: center;
     background-color: rgb(86, 174, 134);
     background-origin: content-box;
-    color: #fff;
+    color: $color10;
     padding: 3PX;
     margin-bottom: 0;
     font-family: 'Lucida Sans';
     font-size: $fontl;
     border-radius: unset;
-    border: 2px solid $color6;
+    border: 10px solid $color6;
 }
 
-
 //Servicio inicia 
-
 
 @mixin size ($width, $height, $bgcolor,$color,$padding) {
     height: $height;
@@ -79,84 +81,90 @@ h2 {
     background-color: $bgcolor;
     color: $color;
     padding: $padding;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
 }
 
 .servicios {
     @include size (100%,400px,$color6,$color10,2px)
 }
-
         .row {
             @include size (100%,400px,$color6,$color7,2px)
-        }            
-
-        //Que hacemos?
-            .nleft {
-                background-image: url(multimedia/mujer-sentada-estudio-coser-tela_1157-33781.jpg);
-                background-size: cover;
-                background-position: center;
-                size-adjust: unset;
-                padding: auto;
-                border: 2px solid #fff;
+        }    
+            //Que hacemos?
+                .nleft {
+                    background-image: url(multimedia/mujer-sentada-estudio-coser-tela_1157-33781.jpg);
+                    background-size: cover;
+                    background-position: center;
+                    size-adjust: unset;
+                    padding: 10px;
+                    border: 2px solid #fff;
             }
 
-            h3 {
-                background-color: $color7;
-                text-align: center;
-                background-position: center;
-                padding: 10px;
-                color: $color6;
-                font-family: $font1;
-                font-size: $fontl;
-                border: 2px solid $color10;
-                // height: auto;
-            }
+                h3 {
+                    background-color: $color5;
+                    text-align: center;
+                    background-position: center;
+                    padding: 10px;
+                    color: $color10;
+                    font-family: $font1;
+                    font-size: $fontl;
+                    border: 2px solid $color10;
+                    // height: auto;
+                }
 
-            .nright p{
-                background-color: #008FAD;
-                text-align: justify;
-                background-position: center;
-                padding: 50px;
-                color: $color10;
-                font-family: 'Lucida Sans';
-                font-size: $fontl;
-                height:280px;
-                border: 2px solid #fff;
-            }
+                .nright1{
+                    background-color: $color7;
+                    text-align: justify;
+                    background-position: center;
+                    padding: 10px;
+                    color: $color10;
+                    font-family: 'Lucida Sans';
+                    font-size: $fontl;
+                    height: 280px;
+                    border: 2px solid #fff;
+                    font-size: 1rem;
+                    text-decoration: solid;
+                    overflow-wrap:break-word;
+                }
+                    p{
+                        overflow-wrap:break-word;
+                        font-size: small;
+                        
+                    }
 
         //Nuestroa arreglos
 
-            .nleft2 {
-                background-image: url(multimedia/AdobeStock_14721611_Preview.jpeg);
-                background-size: cover;
-                background-position: center;
-                size-adjust: inherit;
-                height: 400px;
-                padding: auto;
-                border: 2px solid #fff;
+                .nleft2 {
+                    background-image: url(multimedia/AdobeStock_14721611_Preview.jpeg);
+                    // background-size: cover;
+                    background-position: center;
+                    // size-adjust: inherit;
+                    height: 400px;
+                    // padding: auto;
+                    border: 2px solid #fff;
 
             }
         //Venta despericio textil
-            .nleft3 {
-                background-image: url(multimedia/arreglo-plano-tela-jeans_23-2148876417.jpg);
-                background-size: cover;
-                background-position: center;
-                size-adjust: inherit;
-                height: 400px;
-                padding: auto;
-                border: 2px solid #fff;
-            }
-//Boton mas info 
-            .btn-warning {
-                background-color: #00d089;
-                border-radius: 0%;
-            }
-
-                .btn-warning:hover {
-                    transform: scale(10);
-                    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+                .nleft3 {
+                    background-image: url(multimedia/arreglo-plano-tela-jeans_23-2148876417.jpg);
+                    // background-size: cover;
+                    background-position: center;
+                    // size-adjust: inherit;
+                    height: 400px;
+                    // padding: auto;
+                    border: 2px solid #fff;
                 }
-
-
+//Boton mas info 
+                .btn-warning {
+                    background-color: #00d089;
+                    border-radius: 0%;
+                }
+                    .btn-warning:hover {
+                        transform: scale(1.10);
+                        transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+                    }
 //Galeria tienda iniio
 
 .item {
@@ -188,26 +196,6 @@ h2 {
     background-image: url(multimedia/Tienda\ 3.jpeg);
 }
 
-/* .item {
-        height: 250px;
-        background-color: #333;
-        border: 5px solid yellow;
-        background-image: url(img/cherries-g17c80d496_1920.jpg);
-        background-position: center;
-        background-size: cover;
-    } */
-
-
-/* h2 {
-        border: 2px solid #fff;
-        color: rgb(100, 100, 100);
-        font-family: serif;
-        font-size: 1.5rem;
-        padding: 10px;
-        font-weight: hold;
-        text-decoration: none;
-    } */
-
 ul li {
     color: #00d089;
     text-decoration: underline;
@@ -233,56 +221,6 @@ body {
     background-color: none;
 }
 
-
-
-
-.fondo {
-    width: 500px;
-    height: auto;
-}
-
-.alineado {
-    width: 500px;
-    height: auto;
-}
-
-.aladerecha {
-    text-align: right;
-}
-
-.img {
-    height: 200px;
-    width: 300px;
-    background-color: antiquewhite;
-    background-image: url(Multimedia/traenos\ lo\ qeu\ no\ usas\ clothes-gc37488806_1280.jpg);
-    background-repeat: no-repeat;
-    background-position: right center;
-    border: 10;
-    margin-left: 50px;
-}
-
-iframe {
-    border: 10 solid g;
-    margin-left: 50px;
-    border: 5px solid #00d089;
-}
-
-section img {
-    height: 200px;
-    width: 300px;
-    background-color: antiquewhite;
-    background-image: url(Multimedia/traenos\ lo\ qeu\ no\ usas\ clothes-gc37488806_1280.jpg);
-    background-repeat: no-repeat;
-    background-position: right;
-    border: 10;
-    margin-left: 50px;
-    border: 5px solid burlywood;
-}
-
-.centrado {
-    text-align: center;
-}
-
 nav {
     text-decoration: dashed;
     color: grey;
@@ -301,20 +239,6 @@ nav {
 
 }
 
-p {
-    font-size: 1rem;
-    text-decoration: solid;
-    font-family: calibri;
-}
-
-.parrafo2 {
-    background-color: azure;
-    width: 500px;
-    height: auto;
-    background-position: left;
-    display: inline-block;
-    text-align: justify;
-}
 
 footer {
     background-color: grey;
@@ -338,73 +262,79 @@ footer a {
     align-items: flex-start;
 }
 
-@media only screen and (min-width: 100px) and (max-width:500px) {
-    .jumbotron {
-        background-image: linear-gradient(rgba(0, 255, 204, 0.5), rgba(33, 33, 24, 0.5)), url("./multimedia/telabanner.jpg");
-        background-position: center;
-        height: 200px;
+$breakpoint-small: 576px;
+$breakpoint-medium: 768px;
+$breakpoint-large: 1023px;
+
+@media only screen and (max-width: $breakpoint-small){
+    .servicios {
         width: 100%;
-        border-radius: 0;
-        margin-bottom: 0;
-        font-size: small;
-    }
-
-    .jumbotron p {
-        font-size: x-small;
-    }
-
-    .servicios {
-        @include size (100%,20px,$color6,$color10,2px)
-    }
-    .servicios {
-        display:inline-block;
     }
         .row {
-            @include size (100%,300px,$color6,$color7,2px)
-    }            
-
-    //Que hacemos?
-                h3 {
-                    @include size (500%,50px,$color6,$color7,2px)
-            }
-                h3{
-                font-size: $fontxs; 
+            width: 100%;
+        }
+                aside{
+                    width: 50%!important;
+                    height: 50%!important;
+                    margin-bottom: 10px;
+                    display: inline-block;
+                    background-position-y: center;
+                    flex-wrap:wrap;
                 }
-
-            .nright {
-                @include size (500%,50px,$color6,$color7,2px)
-                // background-color: #008FAD;pagg
-                // text-align: justify;
-                // background-position: center;
-                // padding: 50px;
-                // color: $color10;
-                // font-family: 'Lucida Sans';
-                // font-size: $fontl;
-                // height:280px;
-                // border: 2px solid #fff;
-            }
-            nright p {
-                @include size (100%,50px,$color6,$color7,2px)
-            }
-            .nleft {
-                @include size (50%,50px,$color6,$color7,2px)
-            }
-            .nleft2 {
-                @include size (25%,50px,$color6,$color7,2px)
-            }
-            .nleft3 {
-                @include size (25%,50px,$color6,$color7,2px)
             }
 
-.item {
-    height: 30px;
-    width: 30%;
-    // border: 2px solid #fff;
-    // background-color: #444;
-    // background-size: cover;
-    // background-position: center;
-    // filter: sepia(0%);
-    // transition: all 0.9s;
+@media only screen and (max-width: $breakpoint-small){
+    .row{
+        .item{   
+            width: 100%!important;
+            margin-bottom: 10px!important;
+            flex-wrap:wrap;
+        }
 }
+}
+
+@media only screen and (max-width: $breakpoint-small) {
+    .servicios{
+        width: 100%;
+        margin-bottom: 10px;
+        min-height: 50%;
+    }
+}
+@media only screen and (max-width: $breakpoint-small) {
+        .nleft,
+        .nright1,
+        .nleft2 {
+            width: 50%;
+            flex-wrap:wrap;
+            // min-height: 50%;
+            // margin-right: 10px;
+            }
+
+        .nleft3 {
+            width: 50%;
+            display: flex;
+            flex-wrap:wrap;
+            // min-height: 50%;
+            // margin-right: 10px;
+            }
+        .nleft3 {
+                order: 1;
+                flex-wrap:wrap;
+            }
+        .nright1 {
+            order: 2;
+            flex-wrap:wrap;
+            }
+
+            p{
+                width: 50%;
+                height: 50%;
+                flex-wrap:wrap;
+            }    
+            h3{
+                width: 50%;
+                height: 50%;
+                flex-wrap:wrap;
+            }    
 
 }

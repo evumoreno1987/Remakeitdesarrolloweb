@@ -57,12 +57,12 @@ h1 {
 	margin-left: 20%;
 	margin-right: 20%;
 }
+/* SUtentabilidad */
 
-arousel-item active {
+carousel-item active {
 	background-image: url(../multimedia/Tienda1.jpeg);
 }
-
-.carousel-control-prev {
+	.carousel-control-prev {
 	background-color: grey;
 	display: grid;
 }
@@ -143,6 +143,7 @@ section {
 section form {
 	margin-left: 5%;
 }
+
 
 div textarea {
 	margin-left: 5%;
@@ -290,12 +291,23 @@ div label {
 
 .mapa {
 	justify-content: center;
-	padding: 100px;
+	padding: 20px;
 	width: 100%;
 	height: auto;
 	background-color: aliceblue;
 	display: flex;
 	box-sizing: unset;
+}
+@media only screen and (max-width:768px){
+	.mapa h3 {
+		font-size: x-small;
+	}
+	.mapa p{
+		font-size: x-small;
+	}
+	.card4 article{
+		font-size: x-small;
+	}
 }
 
 .card4 {
@@ -350,11 +362,12 @@ iframe {
 	}
 
 	.card4 {
-		min-height: 30px;
+		min-height:10px;
 		height: 400px;
 		width: 400px;
 		/* size-adjust:u */
 		flex-wrap: wrap;
+		display: inline-block;
 	}
 
 	.card4 h3 {
@@ -425,14 +438,14 @@ iframe {
 /*Tenda divs------------------------------*/
 
 .tienda {
-	height: 100%;
+	height:100%;
 	width: 650px;
 	background-color: #E0EBA7;
 	display:flex;
 	flex-wrap:wrap;
-	padding: 20px;
+	padding: 30px;
 	gap: 20px;
-	font-weight: bold;
+	font-weight:bold;
 
 }
 .tiendax{
